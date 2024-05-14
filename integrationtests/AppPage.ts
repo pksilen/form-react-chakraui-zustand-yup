@@ -18,7 +18,7 @@ export default class AppPage {
     this.inputs = Object.keys(fakeUser).reduce(
       (inputs, fieldName) => ({
         ...inputs,
-        [fieldName]: page.getByLabel(camelCaseIdentifierToWords(fieldName))
+        [fieldName]: page.getByPlaceholder(camelCaseIdentifierToWords(fieldName))
       }),
       {} as Record<keyof User, Locator>
     );

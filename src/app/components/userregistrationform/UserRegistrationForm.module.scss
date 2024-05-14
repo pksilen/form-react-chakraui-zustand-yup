@@ -1,22 +1,11 @@
 .form {
   display: flex;
   flex-direction: column;
-
-  .textInput {
-    margin-top: 20px;
-  }
+  gap: 20px;
 
   .inlineFields {
     border-color: inherit;
     display: flex;
     gap: 20px;
-  }
-
-  .button {
-    margin-top: 30px;
-  }
-
-  .alert {
-    margin-top: 30px;
   }
 }
