@@ -24,9 +24,7 @@ export const UserRegistrationForm = () => {
   } = useForm<UserSchema>({ defaultValues, resolver });
 
   const handleUserRegistration = handleSubmit(async (user) => {
-    const userWasRegistered = await registerUser(user);
-
-    if (userWasRegistered) {
+    if (await registerUser(user)) {
       resetForm();
     }
   });
