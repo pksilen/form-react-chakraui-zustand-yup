@@ -14,7 +14,7 @@ const ControlledFormTextInput = createControlledFormInput<TextInputProps, UserSc
 
 export const UserRegistrationForm = () => {
   const error = useUserStore((store) => store.error);
-  const registerUser = useUserStore((store) => store.actions.registerUser);
+  const { registerUser } = useUserStore((store) => store.actions);
 
   const {
     control: formControl,
